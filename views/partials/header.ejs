@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Todo Cortantes</title>
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script> src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.js" </script>
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="/">Todo Cortantes</a>
-            <ul class="navbar-nav mr-auto">
+<header> 
+  
+      <nav class="navbar navbar-light bg-light">
+          <a class="navbar-brand"><img src="/todo cortantes.png" alt="" width="80" height="80"></a>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link active" aria-current="page" href="/">Inicio</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/products">Productos</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Cortantes</a></li>
+                  <li><a class="dropdown-item" href="#">Toppers</a></li>
+                  <li><a class="dropdown-item" href="#">Texturas</a></li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/contacto">Contacto</a>
@@ -20,11 +38,8 @@
               <li class="nav-item">
                 <a class="nav-link" href="/newsletter">Newsletter</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/carrito">Carrito</a>
-              </li>
             </ul>
-          </nav>
-    </header>
-</body>
+      </nav>
+    </div>    
+</header>
 </html>
